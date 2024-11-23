@@ -13,5 +13,5 @@ phases:
   post_build:
     commands:
       - echo "Uploading files to S3..."
-      - aws s3 cp . s3://your-s3-bucket-name/ --recursive --exclude ".git/*" # Replace with your bucket name
+      - aws s3 cp . s3://ashutoshanwane/ --recursive --exclude ".git/*" # Replace with your bucket name
 
