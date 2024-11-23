@@ -9,7 +9,7 @@ phases:
       - echo "Preparing to upload HTML files to S3..."
   build:
     commands:
-      - echo "No build required for HTML files."
+      - echo "No build required for HTML file."
   post_build:
     commands:
       - echo "Uploading files to S3..."
