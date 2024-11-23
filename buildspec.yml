@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "No dependencies to install for HTML files."
+  pre_build:
+    commands:
+      - echo "Preparing to upload HTML files to S3..."
+  build:
+    commands:
+      - echo "No build required for HTML files."
+  post_build:
+    commands:
+      - echo "Uploading files to S3..."
+      - aws s3 cp . s3://your-s3-bucket-name/ --recursive --exclude ".git/*" # Replace with your bucket name
+
